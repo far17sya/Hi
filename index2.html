@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="./style2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <h1>Oh you find me!</h1>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                 <div class="letter">
+                   <!-- <div class="buttons">
+                        <button class="click-button">Click Here</button>
+                    </div>-->
+                
+                    <div class="text">
+                       <strong>Hello my love</strong>
+                    <p>    This thing nearly drove me crazy soo  if there are a lot of errors plz pejam mata je💕. 
+                            I just want to say thank you so much for giving me a piece of your heart. 
+                            I really couldn't ask for anything better! I love you so much, sayanggg~~
+                            For all the days you’ve made me feel loved, I’m honestly at a loss for words to 
+                            express how grateful I am to have you. I can't promise you a perfect relationship, 
+                            but what I can promise is that as long as we're trying, I'm staying.
+                            I hope the distance won’t change anything between us T^T </p>
+                        <p>I'm so glad we met, and I hope you stick around for a long, long time.❤️</p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+        <div class="buttons2">
+            <a href="./index.html">
+            <button class="click-button2">Back</button>
+        </a>
+        </div>
+        <div class="buttons3">
+            <a href="./index3.html">
+            <button class="click-button3">I made something for you! ❤️</button>
+        </a>
+        </div>
+    </div>
+
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+</html>
